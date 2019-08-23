@@ -28,7 +28,8 @@ DEBUG = False
 ALLOWED_HOSTS = ['127.0.0.1:8000', '127.0.0.1']
 
 REST_FRAMEWORK = {
-    'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.AcceptHeaderVersioning'
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
 }
 
 
